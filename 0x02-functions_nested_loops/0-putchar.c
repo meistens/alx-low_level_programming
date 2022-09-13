@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - prints letters as a string
  *
