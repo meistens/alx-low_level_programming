@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main - find and prints the first 98 Fibonacci numbers, starting with 1 and 2
+ *main - prints sum of even fibonacci values
  *
  *Return: return 0
  */
