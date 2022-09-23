@@ -13,7 +13,7 @@ int *p, i, j, k;
 p = a;
 for (i = 0; i < n; i++)
 p++;
-for (k = 0; k < n / 2; k++)
+for (k = 0; k <= n / 2; k++)
 {
 j = a[k];
 a[k] = *p;
