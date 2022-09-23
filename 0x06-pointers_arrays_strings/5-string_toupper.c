@@ -7,12 +7,11 @@
  */
 char *string_toupper(char *n)
 {
-int i = 0;
-while (n[i])
+int index = 0;
+while (n[index++])
 {
-if (n[i] >= 5 && n[i] <= 9)
-n[i] = n[i] - 1;
-i++;
+if (n[index] >= 'a' && n[index] <= 'z')
+n[index] -= 32;
 }
-return (n);
+return (str);
 }
