@@ -23,3 +23,21 @@ Write a function that returns a pointer to a 2 dimensional array of integers.
 mandatory
 
 Write a function that frees a 2 dimensional grid previously created by your alloc_grid function.
+
+5. It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe
+
+Write a function that concatenates all the arguments of your program.
+
+6. I will show you how great I am
+#advanced
+Score: 0.0% (Checks completed: 0.0%)
+
+Write a function that splits a string into words.
+
+    Prototype: char **strtow(char *str);
+    The function returns a pointer to an array of strings (words)
+    Each element of this array should contain a single word, null-terminated
+    The last element of the returned array should be NULL
+    Words are separated by spaces
+    Returns NULL if str == NULL or str == ""
+    If your function fails, it should return NULL
