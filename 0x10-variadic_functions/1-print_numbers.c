@@ -17,9 +17,11 @@ va_start(valist, n);
 for (i = 0; i < n; i++)
 {
 printf("%d", va_arg(qw, int));
+
 if (separator && i < n - 1)
 printf("%s", separator);
 }
+
 printf("\n");
 va_end(qw);
 }
