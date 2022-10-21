@@ -17,5 +17,5 @@ while (h != NULL)
 h = h->next;
 test++;
 }
-return (test)
+return (test);
 }

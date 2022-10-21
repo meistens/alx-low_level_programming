@@ -5,7 +5,7 @@
  * list_t list
  * @head: head of the linked list
  * @str: string to duplicate
- * 
+ *
  * Return: address of the head
  */
 
@@ -19,7 +19,9 @@ if (new == NULL)
 return (NULL);
 
 new->str = strdup(str);
-for (new_char = 0; str[new_char]; new_char++);
+for (new_char = 0; str[new_char]; new_char++)
+;
+
 new->len = new_char;
 new->next = *head;
 *head = new;
