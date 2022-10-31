@@ -3,14 +3,13 @@
 /**
  * print_listint -  algorithm to print all the elements of
  * a linked list
- * @h: linked list
+ * @h: linked list head
  * Return: number of nodes
  */
 
 size_t print_listint(const listint_t *h)
 {
-	size_t count;
-	int count = 0;
+	size_t count = 0;
 
 	while (h != NULL)
 	{
