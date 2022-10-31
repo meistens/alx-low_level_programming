@@ -20,7 +20,9 @@ typedef struct listint_s
 
 
 /**
- * Description: linked list pointers
+ * struct listp_s - linked list pointers
+ * @p: node pointers
+ * @next: pointer to next node
  *
  */
 
