@@ -1,9 +1,9 @@
 #include <unistd.h>
 
 /**
- * main - prints a quote
- *
+ * main - prints a quote to stderr
  * Return: 1
+ *
  */
 
 int main(void)
