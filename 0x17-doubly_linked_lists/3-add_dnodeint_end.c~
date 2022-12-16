@@ -9,7 +9,6 @@
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *newNode = malloc(sizeof(dlistint_t)); /* allocate memory */
-
 	if (newNode == NULL) /* check if list is empty */
 		return (NULL);
 
@@ -23,7 +22,6 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	else
 	{
 		dlistint_t *tmp = *head; /* create a tmp ptr to head ptr */
-
 		while (tmp->next != NULL)
 			tmp = tmp->next; /* traverse list till last node */
 		/* then move tmp to it */
