@@ -10,6 +10,7 @@
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *newNode; /* create a new node */
+
 	newNode = malloc(sizeof(dlistint_t)); /* allocate mem to node in heap */
 	if (newNode == NULL) /* check if mem allocation was successful */
 		return (NULL);
