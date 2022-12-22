@@ -8,17 +8,31 @@
 
 int _sqrt_recursion(int n)
 {
-	int i;
 	/* check if the data (n) is 0 or 1, if so returns the same value */
 	if (n == 0 || n == 1)
 		return (n);
 
-	/* else loop to iterate the numbers, starting from 1 to i value */
-	for (i = 1; i * i <= n; i++)
-	{
+	/* check if n is negative */
+	if (n < 0)
+		return (-1);
+
+	/* recursively call the function here, dividing n by 2 */
+	int i = _sqrt_recursion(n/2);
+
 		/* is square of current number equal to given number? */
-		if (i * i == n)
-			return (i);
+	if (i * i == n)
+		return (i);
+
+	/* but if square of current number is less than given number? */
+	if (i * i < n)
+	{
+		/* do some math, compare em and return either j or -1 */
+		int j = (i + (n/i)) / 2;
+
+		if (j * j == n)
+			return (j);
+		else
+			return (-1);
 	}
 	/* if numbee does not have a natural sqrt, return -1 */
 	return (-1);
